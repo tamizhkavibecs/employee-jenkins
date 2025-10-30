@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: employeeService
+  datasource:
+    Driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test_db
+    username: SA
+    password:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 9090
